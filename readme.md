@@ -1,0 +1,1 @@
+This is the repository where I will be posting my Javascrip projects.
