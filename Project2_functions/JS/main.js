@@ -15,10 +15,16 @@ function funConcatenate()//this function will switch the text of an element.
         document.getElementById('concatenate').innerHTML = sentence;// This is where we are making the switch.
     }
 
-    // The next function will be of my own design.
-
-    function ft_display()
+// The next function will be of my own design.
+function ft_display()//This ft will add the source element into the ID'd div.
     {
         var picture = '<img  src="./Images/thumbnail_9.png" alt="Picture of Earth"></img>'
         document.getElementById('pic_earth').innerHTML = picture;
+    }
+
+//Mathmatical Operators Ex ***UNUSED
+function ft_addition()
+    {
+        var addition = 2+2;
+        document.getElementById("Math").innerHTML = "2 + 2 = " + addition;
     }
