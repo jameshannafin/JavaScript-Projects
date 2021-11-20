@@ -16,3 +16,8 @@ document.write('This text is more\"difficult\" to write when coding\\ it has to 
 document.write('THIS string of text is concatenated  to' + ' THIS string of text.');
 document.write(sentence_1 + sentence_2);
 document.write(10*8) ///Testing an expression.
+
+//functions
+function keyPress_down() {
+    alert("information not needed");
+  }

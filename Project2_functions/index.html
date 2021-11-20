@@ -5,9 +5,6 @@
 		<title> Basic HTML </title>
 		<meta charset = "utf-8">
 		<meta name = "Author" content="James">
-
-        <script src="../JS/main.js"></script>
-
    </head>  
    <body> 
    
@@ -16,8 +13,15 @@
 			<p> The code of this page is the basic HTML template. </p>
 		</header>
 		
-        
+        <p id="para_1">Some text here</p> 
+        <p id="para_2">Some more text here</p>
+        <button onclick="changeColor('blue','red');">Add Colors</button>
 
-        <input type="text" onkeydown="keyPress_down()">
+        <p id="concatenate" onclick="funConcatenate()"> Click here!</p>
+        
+        <script 
+            src="./JS/main.js">
+        </script>
+       
    </body>  
 </html> 
