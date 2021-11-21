@@ -7,7 +7,7 @@ var blues = blues.fontcolor('blue'), alert_1 = alert_1.fontcolor('red'), name_1 
 // making alert pop-ups
 window.alert("you are amazing!");
 alert(alert_1);
-
+alert()
 /// Writing text on screen
 document.write(blues)
 document.write('This text is written with javascript')
