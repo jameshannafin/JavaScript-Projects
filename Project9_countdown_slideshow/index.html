@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang ='en'>  
+   <head>     
+		<title> Planet Slideshow </title>
+		<meta charset = "utf-8">
+		<meta name = "Author" content="James">
+        <script src="./JS/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+   </head>  
+   <body >  
+   
+		<header>
+			<h3>Planet Slideshow</h3>
+		</header>
+
+        <div class="controls">
+            <p>Enjoy! </p>
+            <p>How many seconds would you like to display a slide before changing?</p>
+            <input id="stg_seconds" value="">
+            <button onclick="ft_set_ss_speed()">Set</button>
+            
+            <p>How many slide changes would you like there to be?</p>
+            <input id="stg_frames" value="">
+            <button onclick="ft_set_ss_frames()">Set</button>
+        
+            <br>
+        
+            <button onclick="ft_countdown()">Start Slideshow</button>
+            <p id="seconds_left"></p>
+            <p id="frames_left"></p>
+        </div>
+
+<!-- This is the slideshow's container -->
+<div class="container_slideshow">
+    <!-- Slides -->
+    <div class="slide fade"><!--Slide 1-->
+      <div class="slideshow_position">1 / 3</div> 
+      <img src="./Images/img1.jpg" style="width:100%">
+      <div class="slide_text">Caption Text</div>
+    </div>
+  
+    <div class="slide fade">
+      <div class="slideshow_position">2 / 3</div>
+      <img src="./Images/img2.jpg" style="width:100%">
+      <div class="slide_text">Caption----------- Two</div>
+    </div>
+  
+    <div class="slide fade"><!--Slide 3-->
+      <div class="slideshow_position">3 / 3</div> 
+      <img src="./Images/img3.jpg" style="width:100%">
+      <div class="slide_text">Caption-------------Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="slide_prev" onclick="ft_switch_slide(-1)">&#10094;</a>
+    <a class="slide_next" onclick="ft_switch_slide(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="ft_get_slide(1)"></span>
+    <span class="dot" onclick="ft_get_slide(2)"></span>
+    <span class="dot" onclick="ft_get_slide(3)"></span>
+  </div>
+
+   </body>  
+</html> 
