@@ -1,3 +1,6 @@
+////////////////////////
+//Ternary operators
+
 //Height Check
 function ft_ride()
     {
