@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang ='en'>  
+   <head>     
+		<title> jQuery Tutorial </title>
+		<meta charset = "utf-8">
+		<meta name = "Author" content="James">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--Calling the browser to download and use the jQuery files-->
+   </head>  
+   <body> 
+       <script>
+           $(document).ready(function(){//This calls the whole document and runs the following code when it is finished loading.
+                $("html").append(//This method will append the following script as code into the HTML file, thus giving it HTML content 
+                    //The back slashes tell the software to use the continue the string into the following line. We make a basic document with a header, some divs, and some paragraphs
+                    "<body>\
+                        <div id='container'>\
+                            <div id = 'inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id = 'expand'>Click Me to expand the options</p>\
+                                <p id = '1'>Paragraph 1:Nothing </p>\
+                                <p id = '2'>Paragraph 2: I am red </p>\
+                                <p id = '3' >Paragraph 3: Click me to remove the header </p>\
+                                <p id = 'hide'>Click Me to hide the options</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+
+
+                //jQuery////////////////
+
+                $('#expand').on//$ to symbolize the use of jQuery code, # to call the html element through its ID. The handler is used to check for multiple events 
+                    (
+                        {
+                            "click":function()//on click do the following
+                                    {
+                                        $( "#1, #2, #3" ).slideDown( 800 ); //Take the specified ID's ( all three in this case) and slide them down
+                                        console.log("Expanded"); // Note this in the log
+                                    },
+                            "mouseover": function() //on mouseover do the following
+                                { 
+                                    $( "#expand" ).css({"color":"blue"}) // Change the color on mouse over 
+                                }
+                        }
+                    );
+
+
+                $('#hide').on
+                    (
+                        {
+                            "click":function()
+                                    {
+                                        $( "#1, #2, #3" ).slideUp( 800 );//Sliding menu items up to hide them
+                                        console.log("Hid");
+                                    },
+                            "mouseover": function() 
+                                { 
+                                    $( "#hide" ).css({"color":"blue"})
+                                }
+                        }
+                    );
+
+
+                $('#2').css({"color":"red"});//using the .css event to quicky change the color of the specified text.
+
+                $('#3').click(function(){
+                    $("h1").hide();//will hide the specified element
+                    console.log("h1 Removed")
+                });
+           });
+       </script>
+   
+	   
+   </body>  
+</html> 
