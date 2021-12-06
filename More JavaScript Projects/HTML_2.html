@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang ='en'>  
+   <head>     
+		<title> Contact Form </title>
+		<meta charset = "utf-8">
+		<meta name = "Author" content="James">
+        <script src="./JavaScript/JavaScript_2.js"></script>
+        <link rel="stylesheet" href="./CSS/css_2.css">
+   </head>  
+   <body> 
+   
+		<header>
+			<h3>Playtest</h4>
+			<p>Please check any that occured.</p>
+		</header>
+
+        <form name="form_playtest" onsubmit="return validateForm()" method="post">
+            <input type="checkbox" id="q_1" name="q_1" value="had_fun">
+            <label for="q_1"> I had fun.</label><br>
+            <input type="checkbox" id="q_2" name="q_2" value="got_lost">
+            <label for="q-2"> I got lost.</label><br>
+            <input type="checkbox" id="q_3" name="q_3" value="game_broke">
+            <label for="q_3"> The game broke.</label>
+            <label for="q_4">What did you enjoy most?</label><br>
+            <input type="text" id="q_4" name="q_4" value=""><br><br>
+
+            <input type="submit" value="Submit">
+          </form> 
+
+	   
+   </body>  
+</html> 
