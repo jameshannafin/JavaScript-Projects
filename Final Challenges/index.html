@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang ='en'>  
+   <head>     
+		<title>Challenges</title>
+		<meta charset = "utf-8">
+		<meta name = "Author" content="James">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   </head>  
+   <body> 
+        <script>//Fade in and out not working 
+            document.body.classList.add('fade-out');
+            window.addEventListener("DOMContentLoaded", () => {
+                document.body.classList.remove('fade-out');
+            });
+            </script>
+
+<script>$("#slideshow > slide:gt(0)").hide();
+
+    setInterval(function() { 
+      $('#slideshow > slide:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+    }, 3000);</script>
+
+        <div class="sticky">I will stick to the screen when you reach my scroll position
+            <button  onclick="openForm()">Open Form</button>
+        </div>
+		<header>
+			<h3 style="font-size:5vw;">Challenges</h3>
+			<p style="font-size:2.5vw;"> This text and the header above have responsive font size </p>
+		</header>
+		
+        <br><br><hr>
+        <br>
+        <br>
+        <br><br>
+
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <p id="check_name"></p>
+            <label for="phone">Please enter a 10 digit phone number with no dashes (I.E. 1112223333):</label>
+            <input type="text" name="phone" id="phone">
+            <p id="check_phone"></p>
+            <button type="button" onclick="checkData()">Submit</button>            
+        </form>
+        <p id="confirm"></p>
+
+        <h2>Popup Form</h2>
+        <p>Click on the button at the bottom of this page to open the login form.</p>
+        <p><a href="#examples">Below</a>, you can see examples of work.</p>
+
+        <button class="open-button" onclick="openForm()">Open Form</button>
+<!--  -->
+<!--  -->
+        <img class="single-featured-image-header img " src="thumbnail_9.png" alt="Earth">
+<!-- 
+    img zoom not working
+ -->
+        
+
+
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+        
+        <!--  -->
+        <!-- Smooth Scroll -->
+        <div class="main" id="section1">
+            <h2>Section 1</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+          </div>
+          
+          <div class="main" id="section2">
+            <h2>Section 2</h2>
+            <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+          </div>
+
+ <!--  -->
+<!--  -->
+<img class="single-featured-image-header img " src="thumbnail_9.png" alt="Earth">
+<!-- 
+    img zoom not working
+ -->
+
+
+<!-- Slide Show -->
+    <div id="slideshow">
+        <div class="slide">
+            <img src="thumbnail_4.png">
+        </div>
+        <div class="slide">
+            <img src="thumbnail_9.png">
+        </div>
+        <div class="slide">
+            Pretty cool eh? This slide is proof the content can be anything.
+        </div>
+    </div>
+
+    
+    </body>  
+</html> 
